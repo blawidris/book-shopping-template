@@ -1,0 +1,589 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.form-control {
+  border: none;
+  width: 100%;
+  background-color: var(--light-color);
+  padding: 10px 30px;
+}
+
+.card {
+  padding: 1% 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: 1px solid #e8e8e8; */
+}
+.box-shadow {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+/* 
+============================
+Margins:
+============================
+ */
+
+/* vertical margin */
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+.my-5 {
+  margin: 4rem 0;
+}
+.my-auto {
+  margin: auto 0;
+}
+
+/* horizontal margin */
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 1.5rem;
+}
+.mx-3 {
+  margin: 0 2rem;
+}
+.mx-4 {
+  margin: 0 3rem;
+}
+.mx-5 {
+  margin: 0 4rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+/* all margin */
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 1.5rem;
+}
+.m-3 {
+  margin: 2rem;
+}
+.m-4 {
+  margin: 3rem;
+}
+.m-5 {
+  margin: 4rem;
+}
+.m-auto {
+  margin: auto;
+}
+/* 
+============================
+Paddings:
+============================
+ */
+
+/* vertical padding */
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 3rem 0;
+}
+.py-5 {
+  padding: 4rem 0;
+}
+
+/* horizontal padding */
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 1.5rem;
+}
+.px-3 {
+  padding: 0 2rem;
+}
+.px-4 {
+  padding: 0 3rem;
+}
+.px-5 {
+  padding: 0 4rem;
+}
+/* all padding */
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 2rem;
+}
+.p-4 {
+  padding: 3rem;
+}
+.p-5 {
+  padding: 4rem;
+}
+
+/* 
+============================
+Backgrounds: Buttons & 
+============================
+ */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+}
+
+.bg-success,
+.btn-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-color-light);
+}
+
+.bg-success-rgba {
+  background-color: var(--success-color-o);
+  color: var(--success-color);
+}
+
+.bg-secondary-rgba {
+  background-color: var(--secondary-color-o);
+  color: var(--secondary-color);
+}
+/* 
+============================
+Custom Buttons
+============================
+ */
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: var(--font-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  color: var(--white-color);
+  outline: none;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* 
+============================
+Text: colors, align * size
+============================
+ */
+
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+.text-dark {
+  color: var(--dark-color);
+}
+.bx-shadow {
+  -moz-box-shadow: 0 0 30px 0 rgba(200, 200, 200, 0.2);
+  -webkit-box-shadow: 0 0 30px 0 rgba(200, 200, 200, 0.2);
+  box-shadow: 0 0 30px 0 rgba(200, 200, 200, 0.2);
+}
+
+.bg-primary-gradient {
+  background-image: linear-gradient(58deg, #506fe4 0, #969efa 100%);
+}
+
+.bg-secondary-gradient {
+  background-image: linear-gradient(58deg, #96a3b6 0, #e6e8f0 100%);
+}
+
+.bg-success-gradient {
+  background-image: linear-gradient(58deg, #43d187 0, #45e396 100%);
+}
+
+.bg-danger-gradient {
+  background-image: linear-gradient(58deg, #f9616d 0, #ff8181 100%);
+}
+
+.bg-warning-gradient {
+  background-image: linear-gradient(58deg, #f7bb4d 0, #fef07f 100%);
+}
+
+.bg-info-gradient {
+  background-image: linear-gradient(58deg, #3d9bfb 0, #a7daf5 100%);
+}
+
+.bg-light-gradient {
+  background-image: linear-gradient(58deg, #f2f3f7 0, #f8fbff 100%);
+}
+
+.bg-dark-gradient {
+  background-image: linear-gradient(58deg, #141d46 0, #4c4c4c 100%);
+}
+
+.text-primary-gradient {
+  background: -webkit-linear-gradient(#4cc6f3, #506fe4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-secondary-gradient {
+  background: -webkit-linear-gradient(#cfd2d6, #96a3b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-success-gradient {
+  background: -webkit-linear-gradient(#9acd2b, #43d187);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-danger-gradient {
+  background: -webkit-linear-gradient(#ff7e4b, #f9616d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-warning-gradient {
+  background: -webkit-linear-gradient(#faec51, #f7bb4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-info-gradient {
+  background: -webkit-linear-gradient(#2ce9ad, #3d9bfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-light-gradient {
+  background: -webkit-linear-gradient(#f3f3f3, #f2f3f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-dark-gradient {
+  background: -webkit-linear-gradient(#666666, #141d46);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.primary-rgba {
+  background-color: rgba(80, 111, 228, 0.1);
+}
+
+.secondary-rgba {
+  background-color: rgba(150, 163, 182, 0.1);
+}
+
+.success-rgba {
+  background-color: rgba(67, 209, 135, 0.1);
+}
+
+.danger-rgba {
+  background-color: rgba(249, 97, 109, 0.1);
+}
+
+.warning-rgba {
+  background-color: rgba(247, 187, 77, 0.1);
+}
+
+.info-rgba {
+  background-color: rgba(61, 155, 251, 0.1);
+}
+
+.light-rgba {
+  background-color: rgba(242, 243, 247, 0.1);
+}
+
+.dark-rgba {
+  background-color: rgba(20, 29, 70, 0.1);
+}
+/* 
+============================
+Border
+============================
+ */
+
+.b-r-t-1 {
+  border-top-right-radius: 1.8rem;
+  border-top-left-radius: 1.8rem;
+}
+.b-r-b-1 {
+  border-bottom-right-radius: 1.8rem;
+  border-bottom-left-radius: 1.8rem;
+}
+
+/* 
+-------------------------------
+    : Custom - Badges css :
+-------------------------------
+*/
+.badge {
+  font-weight: 400;
+}
+
+.badge-default {
+  background-color: #506fe4;
+  color: #ffffff;
+}
+.badge-default[href]:hover {
+  background-color: #3a5de1;
+}
+.badge-default[href]:focus {
+  background-color: #3a5de1;
+}
+
+.badge-primary {
+  background-color: #506fe4;
+}
+.badge-primary[href]:hover {
+  background-color: #3a5de1;
+}
+.badge-primary[href]:focus {
+  background-color: #3a5de1;
+}
+
+.badge-secondary {
+  background-color: #96a3b6;
+}
+.badge-secondary[href]:hover {
+  background-color: #8796ac;
+}
+.badge-secondary[href]:focus {
+  background-color: #8796ac;
+}
+
+.badge-success {
+  background-color: #43d187;
+}
+.badge-success[href]:hover {
+  background-color: #31c97a;
+}
+.badge-success[href]:focus {
+  background-color: #31c97a;
+}
+
+.badge-danger {
+  background-color: #f9616d;
+}
+.badge-danger[href]:hover {
+  background-color: #f84856;
+}
+.badge-danger[href]:focus {
+  background-color: #f84856;
+}
+
+.badge-warning {
+  color: #ffffff;
+  background-color: #f7bb4d;
+}
+.badge-warning[href]:hover {
+  background-color: #f6b235;
+}
+.badge-warning[href]:focus {
+  background-color: #f6b235;
+}
+
+.badge-info {
+  background-color: #3d9bfb;
+}
+.badge-info[href]:hover {
+  background-color: #248efa;
+}
+.badge-info[href]:focus {
+  background-color: #248efa;
+}
+
+.badge-light {
+  color: #8a98ac;
+  background-color: #f2f3f7;
+}
+.badge-light[href]:hover {
+  background-color: #e2e4ed;
+}
+.badge-light[href]:focus {
+  background-color: #e2e4ed;
+}
+
+.badge-dark {
+  background-color: #141d46;
+}
+.badge-dark[href]:hover {
+  background-color: #0e1532;
+}
+.badge-dark[href]:focus {
+  background-color: #0e1532;
+}
+
+.badge-default-inverse {
+  background-color: rgba(80, 111, 228, 0.1);
+  color: #506fe4;
+}
+.badge-default-inverse[href]:hover {
+  background-color: #3a5de1;
+}
+.badge-default-inverse[href]:focus {
+  background-color: #3a5de1;
+}
+
+.badge-primary-inverse {
+  background-color: rgba(80, 111, 228, 0.1);
+  color: #506fe4;
+}
+.badge-primary-inverse[href]:hover {
+  background-color: #3a5de1;
+  color: #ffffff;
+}
+.badge-primary-inverse[href]:focus {
+  background-color: #3a5de1;
+  color: #ffffff;
+}
+
+.badge-secondary-inverse {
+  background-color: rgba(150, 163, 182, 0.1);
+  color: #96a3b6;
+}
+.badge-secondary-inverse[href]:hover {
+  background-color: #8796ac;
+  color: #ffffff;
+}
+.badge-secondary-inverse[href]:focus {
+  background-color: #8796ac;
+  color: #ffffff;
+}
+
+.badge-success-inverse {
+  background-color: rgba(67, 209, 135, 0.1);
+  color: #43d187;
+}
+.badge-success-inverse[href]:hover {
+  background-color: #31c97a;
+  color: #ffffff;
+}
+.badge-success-inverse[href]:focus {
+  background-color: #31c97a;
+  color: #ffffff;
+}
+
+.badge-danger-inverse {
+  background-color: rgba(249, 97, 109, 0.1);
+  color: #f9616d;
+}
+.badge-danger-inverse[href]:hover {
+  background-color: #f84856;
+  color: #ffffff;
+}
+.badge-danger-inverse[href]:focus {
+  background-color: #f84856;
+  color: #ffffff;
+}
+
+.badge-warning-inverse {
+  background-color: rgba(247, 187, 77, 0.1);
+  color: #f7bb4d;
+}
+.badge-warning-inverse[href]:hover {
+  background-color: #f6b235;
+  color: #ffffff;
+}
+.badge-warning-inverse[href]:focus {
+  background-color: #f6b235;
+  color: #ffffff;
+}
+
+.badge-info-inverse {
+  background-color: rgba(61, 155, 251, 0.1);
+  color: #3d9bfb;
+}
+.badge-info-inverse[href]:hover {
+  background-color: #248efa;
+  color: #ffffff;
+}
+.badge-info-inverse[href]:focus {
+  background-color: #248efa;
+  color: #ffffff;
+}
+
+.badge-light-inverse {
+  background-color: rgba(242, 243, 247, 0.1);
+  color: #8a98ac;
+}
+.badge-light-inverse[href]:hover {
+  background-color: #e2e4ed;
+  color: #8a98ac;
+}
+.badge-light-inverse[href]:focus {
+  background-color: #e2e4ed;
+  color: #8a98ac;
+}
+
+.badge-dark-inverse {
+  background-color: rgba(20, 29, 70, 0.1);
+  color: #141d46;
+}
+.badge-dark-inverse[href]:hover {
+  background-color: #0e1532;
+  color: #ffffff;
+}
+.badge-dark-inverse[href]:focus {
+  background-color: #0e1532;
+  color: #ffffff;
+}
