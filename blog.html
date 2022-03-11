@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabaOniwe - </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+    <!-- bootstrap css & icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- aos slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="./assets/image/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex right-menu mobile">
+                        <div class="search-box">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <div class="cart-box">
+                            0
+                            <span class="icon mb-1">
+                                <i class="bi bi-bag-check-fill"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- section hero -->
+    <section id="subHero" class="pt-5">
+        <div class="container bg-image p-l-15 p-r-15 p-tb-70">
+            <h2 class="text-center">Blog</h2>
+        </div>
+    </section>
+    <main id="main-body">
+        <section id="blog_post" class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 left_content mb-4">
+                        <aside class="blog_post_cont">
+                            <div class="d-sm-flex justify-content-between align-items-center">
+                                <a class="blog_image p-r-20 rounded w-100" href="#">
+                                    <img src="./assets/image/blogs/post-10.jpg" width="500" height="400"
+                                        class="img-fluid" alt="">
+                                </a>
+                                <div class="blog_info d-flex flex-column">
+                                    <a class="category m-t-10" href="#">Fashion</a>
+                                    <a href="#" class="link my-2">8 Inspiring Ways to Wear Dresses in the Winter</a>
+                                    <p class="desc">
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                        himenaeos. Fusce eget dictum tortor.
+                                        Donec dictum vitae sapien eu varius
+                                    </p>
+                                    <div class="com_share d-flex align-items-start">
+                                        <span class="comment me-2">
+                                            <i class="bi bi-chat-square-text"></i> 8
+                                        </span>
+                                        <a class="share me-2">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                        <span class="posted_time">
+                                            3 mins read
+                                        </span>
+                                    </div>
+                                </div>
+                                </a>
+                        </aside>
+                        <aside class="blog_post_cont m-t-20">
+                            <div class="d-sm-flex justify-content-between align-items-center">
+                                <a class="blog_image p-r-20 rounded w-100" href="#">
+                                    <img src="./assets/image/blogs/post-9.jpg" width="500" height="400"
+                                        class="img-fluid" alt="">
+                                </a>
+                                <div class="blog_info d-flex flex-column">
+                                    <a class="category m-t-10" href="#">Fashion</a>
+                                    <a href="#" class="link my-2">8 Inspiring Ways to Wear Dresses in the Winter</a>
+                                    <p class="desc">
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                        himenaeos. Fusce eget dictum tortor.
+                                        Donec dictum vitae sapien eu varius
+                                    </p>
+                                    <div class="com_share d-flex align-items-start">
+                                        <span class="comment me-2">
+                                            <i class="bi bi-chat-square-text"></i> 8
+                                        </span>
+                                        <a class="share me-2">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                        <span class="posted_time">
+                                            3 mins read
+                                        </span>
+                                    </div>
+                                </div>
+                                </a>
+                        </aside>
+                        <aside class="blog_post_cont m-t-20">
+                            <div class="d-sm-flex justify-content-between align-items-center">
+                                <a class="blog_image p-r-20 rounded w-100" href="#">
+                                    <img src="./assets/image/blogs/post-8.jpg" width="500" height="400"
+                                        class="img-fluid" alt="">
+                                </a>
+                                <div class="blog_info d-flex flex-column">
+                                    <a class="category m-t-10" href="#">Fashion</a>
+                                    <a href="#" class="link my-2">8 Inspiring Ways to Wear Dresses in the Winter</a>
+                                    <p class="desc">
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                        himenaeos. Fusce eget dictum tortor.
+                                        Donec dictum vitae sapien eu varius
+                                    </p>
+                                    <div class="com_share d-flex align-items-start">
+                                        <span class="comment me-2">
+                                            <i class="bi bi-chat-square-text"></i> 8
+                                        </span>
+                                        <a class="share me-2">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                        <span class="posted_time">
+                                            3 mins read
+                                        </span>
+                                    </div>
+                                </div>
+                                </a>
+                        </aside>
+                        <aside class="blog_post_cont m-t-20">
+                            <div class="d-sm-flex justify-content-between align-items-center">
+                                <a class="blog_image p-r-20 rounded w-100" href="#">
+                                    <img src="./assets/image/blogs/post-7.jpg" width="500" height="400"
+                                        class="img-fluid" alt="">
+                                </a>
+                                <div class="blog_info d-flex flex-column">
+                                    <a class="category m-t-10" href="#">Fashion</a>
+                                    <a href="#" class="link my-2">8 Inspiring Ways to Wear Dresses in the Winter</a>
+                                    <p class="desc">
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                        himenaeos. Fusce eget dictum tortor.
+                                        Donec dictum vitae sapien eu varius
+                                    </p>
+                                    <div class="com_share d-flex align-items-start">
+                                        <span class="comment me-2">
+                                            <i class="bi bi-chat-square-text"></i> 8
+                                        </span>
+                                        <a class="share me-2">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                        <span class="posted_time">
+                                            3 mins read
+                                        </span>
+                                    </div>
+                                </div>
+                                </a>
+                        </aside>
+                        <aside class="blog_post_cont m-t-20">
+                            <div class="d-sm-flex justify-content-between align-items-center">
+                                <a class="blog_image p-r-20 rounded w-100" href="#">
+                                    <img src="./assets/image/blogs/post-6.png" width="500" height="400"
+                                        class="img-fluid" alt="">
+                                </a>
+                                <div class="blog_info d-flex flex-column">
+                                    <a class="category m-t-10" href="#">Fashion</a>
+                                    <a href="#" class="link my-2">8 Inspiring Ways to Wear Dresses in the Winter</a>
+                                    <p class="desc">
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                        himenaeos. Fusce eget dictum tortor.
+                                        Donec dictum vitae sapien eu varius
+                                    </p>
+                                    <div class="com_share d-flex align-items-start">
+                                        <span class="comment me-2">
+                                            <i class="bi bi-chat-square-text"></i> 8
+                                        </span>
+                                        <a class="share me-2">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                        <span class="posted_time">
+                                            3 mins read
+                                        </span>
+                                    </div>
+                                </div>
+                                </a>
+                        </aside>
+                        <div class="pagination p-t-20">
+                            <div class="d-flex align-items-start justify-content-start">
+                                <a href="#"
+                                    class="pagination-item active align-items-center d-flex justify-content-center">1</a>
+                                <a href="#"
+                                    class="pagination-item align-items-center d-flex justify-content-center">2</a>
+                                <a href="#"
+                                    class="pagination-item align-items-center d-flex justify-content-center">3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 p-b-40">
+                        <div class="side-menu">
+                            <div class="input-group mb-3 border-radius-25 position-relative overflow-hidden">
+                                <input type="search" class="form-control" name="q" placeholder="Search">
+                                <button class="btn btn-primary btn-search">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+
+                            <div class="p-t-20">
+                                <h4 class="blog-cat">Category</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="d-flex justify-content-between h4 align-items-center">
+                                            <div class="d-flex">
+                                                <span class="icon">
+                                                    <i class="bi bi-shop"></i>
+                                                </span>
+                                                Fashion
+                                            </div>
+
+                                            <span class="badge bg-primary rounded-pill">14</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="d-flex justify-content-between h4 align-items-center">
+                                            <div class="d-flex">
+                                                <span class="icon">
+                                                    <i class="bi bi-cart"></i>
+                                                </span>
+                                                Street Style
+                                            </div>
+
+                                            <span class="badge bg-primary rounded-pill">14</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="d-flex justify-content-between h4 align-items-center">
+                                            <div class="d-flex">
+                                                <span class="icon">
+                                                    <i class="bi bi-cart"></i>
+                                                </span>
+                                                Life Style
+                                            </div>
+
+                                            <span class="badge bg-primary rounded-pill">14</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="d-flex justify-content-between h4 align-items-center">
+                                            <div class="d-flex">
+                                                <span class="icon">
+                                                    <i class="bi bi-cart"></i>
+                                                </span>
+                                                DIY & Crafts
+                                            </div>
+
+                                            <span class="badge bg-primary rounded-pill">14</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="featured_product">
+                            <h4 class="blog-cat">Featured Products</h4>
+                            <ul class="list-group list border-0">
+                                <li class="list-group-item border-0 p-b-30">
+                                    <div class="d-flex align-items-start">
+                                        <a href="#" class="position-relative m-r-20 wrap-img">
+                                            <img src="./assets/image/books/book-3.png" class="img-fluid" alt="">
+                                        </a>
+                                        <div class="d-flex flex-column p-t-5 sz">
+                                            <a href="#" class="f-link">White Shirt With Pleat Detail Back</a>
+                                            <span class="price p-t-20">$19.00</span>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 p-b-30">
+                                    <div class="d-flex align-items-start">
+                                        <a href="#" class="position-relative m-r-20 wrap-img">
+                                            <img src="./assets/image/books/book-2.png" class="img-fluid" alt="">
+                                        </a>
+                                        <div class="d-flex flex-column p-t-5 sz">
+                                            <a href="#" class="f-link">White Shirt With Pleat Detail Back</a>
+                                            <span class="price p-t-20">$19.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 p-b-30">
+                                    <div class="d-flex align-items-start">
+                                        <a href="#" class="position-relative m-r-20 wrap-img">
+                                            <img src="./assets/image/books/book-4.png" class="img-fluid" alt="">
+                                        </a>
+                                        <div class="d-flex flex-column p-t-5 sz">
+                                            <a href="#" class="f-link">White Shirt With Pleat Detail Back</a>
+                                            <span class="price p-t-20">$19.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="p-3">
+        <div class="container">
+            <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-between align-items-start  mt-3">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/image/logo.png" alt="Babaoniwe">
+                </a>
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="footer-content">
+                    <p>
+                        &copy;
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                        BabaOniwe. All right resversed
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- owlcarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

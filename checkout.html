@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabaOniwe - </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+    <!-- bootstrap css & icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- aos slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="animsition">
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 bg-light main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="./assets/image/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex right-menu mobile">
+                        <form id="searchForm" class="modal-search-header d-none me-2">
+                            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-search me-4"><i class="bi bi-search"></i></button>
+                            <span class="btn btn-search" id="hide-search-box"><i class="bi bi-x"></i></span>
+                        </form>
+
+                        <div class="search-box" id="search-modal" class="js-show-modal-search">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <a href="cart.html" class="nav-link cart-box">
+                            <span class="total-count">0</span>
+                            <span class="icon mb-1">
+                                <i class="bi bi-bag-check-fill"></i>
+                            </span>
+                        </a>
+                        <!-- <div class="cart-box ">
+                            <span class="total-count">0</span>
+                            <span class="icon mb-1">
+                                <i class="bi bi-bag-check-fill"></i>
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- breadcumb hero -->
+    <section class="pt-5" id="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/" class="breadcrumb-item">Home</a>
+                <a href="/shop.html" class="breadcrumb-item">Books</a>
+                <a class="breadcrumb-item active" aria-current="page">
+                    Checkout
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-body">
+        <section id="checkout" class="checkout  pt-4 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 bg-white checkout-c mr-2">
+                        <h3>Billing details</h3>
+                        <form id="billForm" class="bill-form my-3">
+                            <div class="row g-3 mb-3">
+                                <div class="col">
+                                    <label for="first_name" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" name="f_name" id="first_name">
+                                </div>
+                                <div class="col">
+                                    <label for="lst_name" class="form-label">Last Name</label>
+                                    <input type="text" id="lst_name" class="form-control" name="l_name"
+                                        aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country / Region</label>
+                                <select id="country" class="form-select" name="country">
+                                    option value="">Select a country / region…</option>
+                                    <!-- <option value="CA">Canada</option> -->
+                                    <option value="NG" selected="selected">Nigeria</option>
+                                    <!-- <option value="GB">United Kingdom (UK)</option> -->
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="street" class="form-label">Street address</label>
+                                <input type="text" class="form-control mb-3" name="billing_address_1"
+                                    id="billing_address_1" placeholder="House number and street name" value=""
+                                    autocomplete="address-line" data-placeholder="House number and street name">
+                                <input type="text" class="form-control" name="billing_address_2" id="billing_address_2"
+                                    placeholder="Apartment, suite, unit, etc. (optional)" value=""
+                                    autocomplete="address-line2"
+                                    data-placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="state" class="form-label">State</label>
+                                <select name="billing_state" id="billing_state" class="form-select"
+                                    autocomplete="address-level" data-placeholder="Select an option…"
+                                    data-input-classes="" data-label="State" tabindex="-1" aria-hidden="true">
+                                    <option value="">Select an option…</option>
+                                    <option value="LA">Lagos</option>
+                                    <option value="AB">Abia</option>
+                                    <option value="FC">Abuja</option>
+                                    <option value="AD">Adamawa</option>
+                                    <option value="AK">Akwa Ibom</option>
+                                    <option value="AN">Anambra</option>
+                                    <option value="BA">Bauchi</option>
+                                    <option value="BY">Bayelsa</option>
+                                    <option value="BE">Benue</option>
+                                    <option value="BO">Borno</option>
+                                    <option value="CR">Cross River</option>
+                                    <option value="DE">Delta</option>
+                                    <option value="EB">Ebonyi</option>
+                                    <option value="ED">Edo</option>
+                                    <option value="EK">Ekiti</option>
+                                    <option value="EN">Enugu</option>
+                                    <option value="GO">Gombe</option>
+                                    <option value="IM">Imo</option>
+                                    <option value="JI">Jigawa</option>
+                                    <option value="KD">Kaduna</option>
+                                    <option value="KN">Kano</option>
+                                    <option value="KT">Katsina</option>
+                                    <option value="KE">Kebbi</option>
+                                    <option value="KO">Kogi</option>
+                                    <option value="KW">Kwara</option>
+                                    <option value="NA">Nasarawa</option>
+                                    <option value="NI">Niger</option>
+                                    <option value="OG">Ogun</option>
+                                    <option value="ON">Ondo</option>
+                                    <option value="OS">Osun</option>
+                                    <option value="OY">Oyo</option>
+                                    <option value="PL">Plateau</option>
+                                    <option value="RI">Rivers</option>
+                                    <option value="SO">Sokoto</option>
+                                    <option value="TA">Taraba</option>
+                                    <option value="YO">Yobe</option>
+                                    <option value="ZA">Zamfara</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="billing_city" class="form-label">City</label>
+                                <select name="billing_city" id="billing_city" class="form-select"
+                                    autocomplete="address-level2" placeholder="" tabindex="-1" aria-hidden="true">
+                                    <option value="">Select an option…</option>
+                                    <option value="Demsa">Demsa</option>
+                                    <option value="Fufore">Fufore</option>
+                                    <option value="Ganaye">Ganaye</option>
+                                    <option value="Gireri">Gireri</option>
+                                    <option value="Gombi">Gombi</option>
+                                    <option value="Guyuk">Guyuk</option>
+                                    <option value="Hong">Hong</option>
+                                    <option value="Jada">Jada</option>
+                                    <option value="Lamurde">Lamurde</option>
+                                    <option value="Madagali">Madagali</option>
+                                    <option value="Maiha">Maiha</option>
+                                    <option value="Mayo-Belwa">Mayo-Belwa</option>
+                                    <option value="Michika">Michika</option>
+                                    <option value="Mubi North">Mubi North</option>
+                                    <option value="Mubi South">Mubi South</option>
+                                    <option value="Numan">Numan</option>
+                                    <option value="Shelleng">Shelleng</option>
+                                    <option value="Song">Song</option>
+                                    <option value="Toungo">Toungo</option>
+                                    <option value="Yola North">Yola North</option>
+                                    <option value="Yola South">Yola South</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="change-shipping-address">
+                                <label class="form-check-label" for="change-shipping-address">Ship to differend
+                                    address</label>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-coupon border-0">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="checkout-c bg-white ">
+                            <h3>Your order</h3>
+                            <table class="table table-sm table-responive border">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start">Product</th>
+                                        <th class="text-end">
+                                            Subtotal
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start product_name">
+                                            Peppered Croaker Fish × <span class="qty">1</span>
+                                        </td>
+                                        <td class="text-end product_price">
+                                            <span class="currency"></span> 3,050.00
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr class="cart_sub_total">
+                                        <td class="text-start fw-bold">
+                                            Subtotal
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="currency"></span> 3,050.00
+                                        </td>
+                                    </tr>
+                                    <tr class="cart_shipping_total">
+                                        <td class="text-start fw-bold">
+                                            Shipping
+                                        </td>
+                                        <td class="text-end">
+                                            Enter your address to view shipping options.
+                                        </td>
+                                    </tr>
+                                    <tr class="cart_total">
+                                        <td class="text-start fw-bold">
+                                            Total
+                                        </td>
+                                        <td class="text-end">
+                                            <span class="currency"></span> 3,050.00
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+
+                            <div class="payment_mode mb-3" id="payment_mode">
+                                <div class="d-sm-flex justify-content-between align-items-center">
+                                    <h3>DEBIT/CREDIT CARDS</h3>
+                                    <img src="./assets/image/paystack-wc.png" class="img-fluid">
+                                </div>
+                                <div
+                                    class="payment_mode_box d-sm-flex justify-content-center align-items-center align-bottom">
+                                    Make payment using your debit and credit cards
+                                </div>
+                            </div>
+                            <p></p>
+                            <button class="btn btn-dark bg-red border-0 w-100">Place Order</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="p-3">
+        <div class="container">
+            <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-between align-items-start  mt-3">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/image/logo.png" alt="Babaoniwe">
+                </a>
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="footer-content">
+                    <p>
+                        &copy;
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                        BabaOniwe. All right resversed
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- owlcarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

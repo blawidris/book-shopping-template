@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabaOniwe - </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+    <!-- bootstrap css & icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- aos slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="animsition">
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 bg-light main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="./assets/image/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex right-menu mobile">
+                        <form id="searchForm" class="modal-search-header d-none me-2">
+                            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-search me-4"><i class="bi bi-search"></i></button>
+                            <span class="btn btn-search" id="hide-search-box"><i class="bi bi-x"></i></span>
+                        </form>
+
+                        <div class="search-box" id="search-modal" class="js-show-modal-search">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <a href="cart.html" class="nav-link cart-box">
+                            <span class="total-count">0</span>
+                            <span class="icon mb-1">
+                                <i class="bi bi-bag-check-fill"></i>
+                            </span>
+                        </a>
+                        <!-- <div class="cart-box ">
+                            <span class="total-count">0</span>
+                            <span class="icon mb-1">
+                                <i class="bi bi-bag-check-fill"></i>
+                            </span>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-body">
+        <!-- showcase -->
+        <section class="p-lg-0 pt-lg-4 p-sm-1 text-center text-sm-start section" id="showcase">
+            <div class="container showcase-in">
+                <div class="d-sm-flex align-items-center justify-content-around my-lg-5">
+                    <div class="showcase-text">
+                        <h2><span class="showcase-text-primary">Knowledge </span>Requires Reading Books</h2>
+                        <p class="lead my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis illo eius
+                            error,
+                            eos eaque optio.
+                        </p>
+                        <div class="showcase-input mt-3">
+                            <input type="search" class="form-control" placeholder="Type here">
+                            <button class="btn btn-primary btn-lg" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./assets/image/vector/hero.png" class="img-fluid w-50 d-none d-sm-block" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- category -->
+        <section class="pt-5 category" id="shop">
+            <div class="container">
+                <div class="section-title">
+                    <div class="h4 py-0 m-0 py-1">Books</div>
+                    <div class="h3">Shop Category</div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="row g-4 g-lg-1">
+                            <div class="col-md-6 col-lg-6 col-sm-12 pb-1 mx-auto" data-aos="fade-right"
+                                data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <div class="category-block bg-orange">
+                                    <div class="cat-text">
+                                        <h4>Teen & Young <br> Adult</h4>
+                                        <a href="#" class="cat-link">
+                                            Shop now
+                                        </a>
+                                    </div>
+                                    <div class="cat-img">
+                                        <img src="./assets/image/vector/TY.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 pb-1 mx-auto" data-aos="fade-left"
+                                data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <div class="category-block bg-red">
+                                    <div class="cat-text">
+                                        <h4>Literature & <br> Fiction</h4>
+                                        <a href="#" class="cat-link">
+                                            Shop now
+                                        </a>
+                                    </div>
+                                    <div class="cat-img">
+                                        <img src="./assets/image/vector/LF.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-12 col-sm-12" data-aos="fade-up" data-aos-delay="100"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out">
+                                <div class="category-block-2 bg-darkblue">
+                                    <div class="cat-text my-4 ">
+                                        <h4>Religion & <br> Spirituality</h4>
+                                        <a href="#" class="cat-link text-white border-white">
+                                            Shop now
+                                        </a>
+                                    </div>
+                                    <div class="cat-img">
+                                        <img src="./assets/image/vector/RS.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-12 p-b-30 mx-auto" data-aos="zoom-in-right"
+                        data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-out">
+                        <div class="category-block-1 bg-purple">
+                            <div class="cat-text">
+                                <h4>Biographies <br>& Memoirs</h4>
+                                <a href="#" class="cat-link">
+                                    Shop now
+                                </a>
+                            </div>
+                            <div class="cat-img-1">
+                                <img src="./assets/image/vector/BM.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 p-b-30 mx-auto" data-aos="zoom-in-left" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease">
+                        <div class="category-block-1 bg-green flex-column-reverse ">
+                            <div class="cat-text">
+                                <h4>Mystery, Thriller <br>& Suspense</h4>
+                                <a href="#" class="cat-link text-white border-white">
+                                    Shop now
+                                </a>
+                            </div>
+                            <div class="cat-img-1">
+                                <img src="./assets/image/vector/M.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- product -->
+        <section class="p-lg-5 p-3" id="product" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+            data-aos-easing="ease">
+            <div class="container">
+                <div class="card section">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <div class="pb-2">
+                            <h4 class="text-left">
+                                Featured Product
+                            </h4>
+                        </div>
+                        <span class="line"></span>
+                        <a href="./book.html" class="btn btn-primary">View all</a>
+                    </div>
+                    <!-- row 1 -->
+                    <div class="row mb-3">
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-1.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-2.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-3.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-4.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-1.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-2.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-3.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 p-b-35 hover">
+                            <div class="img-box">
+                                <div class="card-img-top">
+                                    <a href="#" class="link-to-product" tabindex="0">
+                                        <img src="assets/image/books/book-4.png" alt="Vegetables"
+                                            class="product-thumnail img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span class="rating">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <h4 class="product-title">
+                                    <a href="#" class="pr-name">
+                                        Blueprint & Building
+                                    </a>
+                                </h4>
+                                <span class="author">Michael Anderson</span>
+                                <span class="price">
+                                    <span class="currencySign">#</span>
+                                    3,000
+                                </span>
+                                <div class="slide-down-box">
+                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn wishlist-btn" tabindex="0"><i class="bi bi-heart"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="btn btn-primary add-to-cart-btn" tabindex="0"><i
+                                                class="bi bi-cart-arrow-down" aria-hidden="true"></i>add
+                                            to cart</a>
+                                        <a href="#" class="btn compare-btn" tabindex="0"><i class="bi bi-random"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Customers Feedback  -->
+        <section class="p-lg-5 p-5" id="testimonial" data-aos="fade-left" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <div class="container">
+                <div class="section-title">
+                    <div class="h4 py-0 m-0 py-1 red-text">Testimonial</div>
+                    <div class="h3">Customers Review</div>
+                </div>
+                <div class="wrap-slick d-sm-flex justify-content-between align-items-center">
+                    <!-- btn prev -->
+                    <button class="arrow arrow-prev"><i class="bi bi-chevron-left"></i></button>
+
+                    <!-- card 1 -->
+                    <div class="card text-center d-sm-flex align-items-center justify-content-center m-r-15">
+                        <div class="card-img-top d-sm-flex align-items-center justify-content-center">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg"
+                                class="img-fluid rounded-circle mb-3" alt="">
+                        </div>
+                        <div class="card-body d-sm-flex flex-column align-items-center">
+                            <h4 class="card-title">Ayomide Adekola</h4>
+                            <span class="position">Student</span>
+                            <p class="card-text text-center">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text
+                            </p>
+                            <span class="rating">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card text-center  d-sm-flex align-items-center justify-content-center m-r-15">
+                        <div class="card-img-top d-sm-flex align-items-center justify-content-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg"
+                                class="img-fluid rounded-circle mb-3" alt="">
+                        </div>
+                        <div class="card-body d-sm-flex flex-column align-items-center">
+                            <h4 class="card-title">Foyinsola Adeleke</h4>
+                            <span class="position">Principal</span>
+                            <p class="card-text text-center">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text
+                            </p>
+                            <span class="rating">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card text-center  d-sm-flex align-items-center justify-content-center m-r-15">
+                        <div class="card-img-top d-sm-flex align-items-center justify-content-center">
+                            <img src="https://randomuser.me/api/portraits/women/13.jpg"
+                                class="img-fluid rounded-circle mb-3" alt="">
+                        </div>
+                        <div class="card-body d-sm-flex flex-column align-items-center">
+                            <h4 class="card-title">Yisa Rashidat</h4>
+                            <span class="position">CO</span>
+                            <p class="card-text text-center">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text
+                            </p>
+                            <span class="rating">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="card text-center  d-sm-flex align-items-center justify-content-center m-r-15">
+                        <div class="card-img-top d-sm-flex align-items-center justify-content-center">
+                            <img src="https://randomuser.me/api/portraits/men/14.jpg"
+                                class="img-fluid rounded-circle mb-3" alt="">
+                        </div>
+                        <div class="card-body d-sm-flex flex-column align-items-center">
+                            <h4 class="card-title">Idris Law</h4>
+                            <span class="position">Softare developer</span>
+                            <p class="card-text text-center">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text
+                            </p>
+                            <span class="rating text-center">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="card text-center  d-sm-flex align-items-center justify-content-center m-r-15">
+                        <div class="card-img-top d-sm-flex align-items-center justify-content-center">
+                            <img src="https://randomuser.me/api/portraits/men/18.jpg"
+                                class="img-fluid rounded-circle mb-3" alt="">
+                        </div>
+                        <div class="card-body d-sm-flex flex-column align-items-center">
+                            <h4 class="card-title">Idris Law</h4>
+                            <span class="position">Softare developer</span>
+                            <p class="card-text text-center">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text
+                            </p>
+                            <span class="rating">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- btn next -->
+                    <button class="arrow arrow-next"><i class="bi bi-chevron-right"></i></button>
+
+                </div>
+            </div>
+        </section>
+        <!-- blog -->
+        <section id="blog" class="p-lg-5 p-3">
+            <div class="container card section">
+                <div class="section-title">
+                    <div class="h4 py-0 m-0 py-1 red-text">Blog</div>
+                    <div class="h3">Latest Post</div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3 col-sm-12 col-md-6 blog-container">
+                        <div class="card-img">
+                            <img src="./assets/image/blogs/post-10.jpg" alt="Post-1" class="img-fluid">
+                        </div>
+                        <div class="card-body mb-4">
+
+                            <div class="card-text">
+                                <a href="./single.html" class="card-title fw-bold">What is Lorem Ipsum</a>
+                                <p class="my-3">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <a href="./single.html" class="card-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 col-md-6 blog-container">
+                        <div class="card-img">
+                            <img src="./assets/image/blogs/post-9.jpg" alt="Post-1" class="img-fluid">
+                        </div>
+                        <div class="card-body mb-4">
+
+                            <div class="card-text">
+                                <a href="./single.html" class="card-title fw-bold">What is Lorem Ipsum</a>
+                                <p class="my-3">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <a href="./single.html" class="card-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 col-md-6 blog-container">
+                        <div class="card-img">
+                            <img src="./assets/image/blogs/post-8.jpg" alt="Post-1" class="img-fluid">
+                        </div>
+                        <div class="card-body mb-4">
+
+                            <div class="card-text">
+                                <a href="./single.html" class="card-title fw-bold">What is Lorem Ipsum</a>
+                                <p class="my-3">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <a href="./single.html" class="card-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-12 col-md-6 blog-container">
+                        <div class="card-img">
+                            <img src="./assets/image/blogs/post-7.jpg" alt="Post-1" class="img-fluid">
+                        </div>
+                        <div class="card-body mb-4">
+
+                            <div class="card-text">
+                                <a href="./single.html" class="card-title fw-bold">What is Lorem Ipsum</a>
+                                <p class="my-3">
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <a href="./single.html" class="card-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- newsletter -->
+        <section id="newsletter" class="p-lg-5 p-3">
+            <div class="container newsletter">
+                <div class="d-sm-flex justify-content-around align-items-center">
+                    <div class="news-img">
+                        <img src="./assets/image/vector/newsletter.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="newsletter-container">
+                        <div class="newsletter-title py-1">
+                            <h6>Subscribe to our email</h6>
+                        </div>
+                        <h4 class="my-4">For Latest News & Update</h4>
+                        <div class="news-form mb-5">
+                            <i class="bi bi-envelope"></i>
+                            <input class="form-control form-control-lg" type="text" placeholder="Type Your Email">
+                            <button class="btn btn-lg btn-primary btn-subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="p-3">
+        <div class="container">
+            <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-between align-items-start  mt-3">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/image/logo.png" alt="Babaoniwe">
+                </a>
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="footer-content">
+                    <p>
+                        &copy;
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                        BabaOniwe. All right resversed
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- owlcarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
